@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/llt_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:background="?selectableItemBackground">
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名 : 张三"
+            android:textColor="#333333"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/text_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号 : 1333333333"
+            android:textColor="#666666"
+            android:textSize="12sp"
+            android:layout_marginTop="1dp"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

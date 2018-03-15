@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/llt_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_refresh">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/colorAccent"
+            android:text="点击换一批"/>
+
+        <ImageView
+            android:id="@+id/img_refresh"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@mipmap/ic_refresh"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llt_expansion"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/text_expansion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="展开"/>
+
+        <ImageView
+            android:id="@+id/img_down_arrows"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_down_arrows"
+            android:layout_marginLeft="15dp"/>
+
+    </LinearLayout>
+
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/flexboxLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:flexWrap="wrap"
+        app:alignItems="stretch"
+        app:alignContent="stretch"
+        app:showDivider="middle"
+        android:layout_marginTop="15dp"
+        app:dividerDrawableVertical="@drawable/bg_flexbox_divider"
+        app:dividerDrawableHorizontal="@drawable/bg_flexbox_divider">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test1"
+            android:background="@drawable/bg_text_tag"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textSize="12sp"
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11111111111"
+            android:background="@drawable/bg_text_tag"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textSize="12sp"
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="wwwwwwww"
+            android:background="@drawable/bg_text_tag"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:textSize="12sp"
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2222"
+            android:background="@drawable/bg_text_tag"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textSize="12sp"
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="rrrrrrrrrrrr"
+            android:background="@drawable/bg_text_tag"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textSize="12sp"
+            android:textColor="@color/colorAccent"/>
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+</LinearLayout>
